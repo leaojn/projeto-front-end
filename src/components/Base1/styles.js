@@ -415,10 +415,15 @@ export const RowThreeItens = styled.div`
       align-self: center;
     }
     @media ${theme.media.lteMedium} {
+      flex-direction: column;
+
       > ${Logo} {
+        margin-top: 0;
+        margin: 3rem;
+        margin-bottom: 0;
         /* width: 5rem; */
         /* height: 5rem; */
-        margin: 2.5rem;
+        /* margin: 2.5rem; */
         /* width: 90%; */
       }
     }
