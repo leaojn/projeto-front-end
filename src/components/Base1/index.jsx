@@ -1,10 +1,12 @@
 import * as Styled from './styles';
 import P from 'prop-types';
 import { Style } from '@styled-icons/material-outlined';
+import { useState } from 'react';
 
-export const Base1 = ({ srcImage, srcLogo, children }) => {
+export const Base1 = ({ srcImage, srcLogo, children, name }) => {
+  // const [name, setName] = useState();
   return (
-    <>
+    <Styled.Body>
       <Styled.Container>
         {/* <Styled.Div> */}
         <Styled.CarDiv>
@@ -76,33 +78,85 @@ export const Base1 = ({ srcImage, srcLogo, children }) => {
           </ul>
         </Styled.LongText>
       </Styled.Grid6>
+      <Styled.Clients>
+        <Styled.Text>Clientes</Styled.Text>
+        <Styled.RowThreeItens>
+          <Styled.Logo src="assets/images/Hyundai.svg"></Styled.Logo>
+          <Styled.Logo src="assets/images/Fiat.svg"></Styled.Logo>
+          <Styled.Logo src="assets/images/Jeep.svg"></Styled.Logo>
+        </Styled.RowThreeItens>
+        <Styled.RowThreeItens>
+          <Styled.Logo src="assets/images/Caoa.svg"></Styled.Logo>
+          <Styled.Logo src="assets/images/Kia.svg"></Styled.Logo>
+          <Styled.Logo src="assets/images/Mitsubishi.svg"></Styled.Logo>
+        </Styled.RowThreeItens>
+        <Styled.RowThreeItens>
+          {' '}
+          <Styled.Logo src="assets/images/Cherry.svg"></Styled.Logo>
+          <Styled.Logo src="assets/images/Citroen.svg"></Styled.Logo>
+          <Styled.Logo src="assets/images/Volvo.svg"></Styled.Logo>
+        </Styled.RowThreeItens>
+        <Styled.RowThreeItens>
+          <Styled.Logo src="assets/images/Peugeot.svg"></Styled.Logo>
+        </Styled.RowThreeItens>
+      </Styled.Clients>
       <Styled.Grid7>
         <Styled.Text>Serviços</Styled.Text>
-        <Styled.Card>
-          <Styled.CardName>
-            <Styled.Text>Vistoria de Transferência</Styled.Text>
-          </Styled.CardName>
-          <Styled.Text>
-            O veículo possui itens de identificação que os torna único. Por isso
-            é fundamental ter um especialista para verificar e evitar que compre
-            um carro com possíveis fraudes, como clonagem.{' '}
-          </Styled.Text>
-        </Styled.Card>
+        <Styled.RowTwoItens>
+          <Styled.Card>
+            <Styled.CardName>
+              <Styled.Text>Vistoria de Transferência</Styled.Text>
+            </Styled.CardName>
+            <Styled.Text>
+              O veículo possui itens de identificação que os torna único. Por
+              isso é fundamental ter um especialista para verificar e evitar que
+              compre um carro com possíveis fraudes, como clonagem.{' '}
+            </Styled.Text>
+          </Styled.Card>
 
-        <Styled.Card>
-          <Styled.CardName>
-            <Styled.Text>Vistoria Cautelar</Styled.Text>
-          </Styled.CardName>
-          <Styled.Text>
-            A estrutura do veículo pode afetar diretamente a segurança dos
-            passageiros em uma colisão. Por este motivo é necessário que um
-            parceiro verifique se o veículo está seguro. São verificados mais de
-            20 itens, como pintura, lataria, teto, assoalho, colunas e
-            longarinas.
-          </Styled.Text>
-        </Styled.Card>
+          <Styled.Card>
+            <Styled.CardName>
+              <Styled.Text>Vistoria Cautelar</Styled.Text>
+            </Styled.CardName>
+            <Styled.Text>
+              A estrutura do veículo pode afetar diretamente a segurança dos
+              passageiros em uma colisão. Por este motivo é necessário que um
+              parceiro verifique se o veículo está seguro. São verificados mais
+              de 20 itens, como pintura, lataria, teto, assoalho, colunas e
+              longarinas.
+            </Styled.Text>
+          </Styled.Card>
+        </Styled.RowTwoItens>
       </Styled.Grid7>
-    </>
+      <Styled.ContactDiv>
+        <Styled.Text>CONTATOS</Styled.Text>
+
+        <Styled.ContactItens>
+          <Styled.Form>
+            <Styled.Input type="text" value={name}></Styled.Input>
+            <Styled.Input type="text" value={name}></Styled.Input>
+            <Styled.Input type="text" value={name}></Styled.Input>
+            <Styled.Input type="text" value={name}></Styled.Input>
+            <Styled.Button>Enviar</Styled.Button>
+          </Styled.Form>
+          <Styled.ImageCar src="assets/images/Argo.svg"></Styled.ImageCar>
+          <Styled.WhatsAppContact>
+            <Styled.ImageCar src="assets/images/WhatsApp.svg"></Styled.ImageCar>
+          </Styled.WhatsAppContact>
+        </Styled.ContactItens>
+      </Styled.ContactDiv>
+      <Styled.YoutubeVideo>
+        {/* <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yqDZx0Aflok"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe> */}
+      </Styled.YoutubeVideo>
+    </Styled.Body>
   );
 };
 
@@ -110,4 +164,5 @@ Base1.propTypes = {
   children: P.node.isRequired,
   srcImage: P.string.isRequired,
   srcLogo: P.string.isRequired,
+  name: P.string.isRequired,
 };

@@ -5,9 +5,19 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     @media ${theme.media.lteMedium} {
-      grid-template-columns: none;
+      grid-template-columns: 1fr;
       /* height: 40vh; */
-      overflow-x: none;
+      /* overflow-x: none; */
+    }
+  `}
+`;
+
+export const Body = styled.div`
+  ${({ theme }) => css`
+    @media ${theme.media.lteMedium} {
+      /* height: 40vh; */
+      overflow-y: scroll;
+      overflow-x: hidden;
     }
   `}
 `;
@@ -288,16 +298,40 @@ export const Grid7 = styled.div`
     /* min-width: 100vh; */
     /* min-height: 100vh; */
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media ${theme.media.lteMedium} {
+      flex-direction: column;
+    }
+    > ${Text} {
+      color: black;
+      align-self: center;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+      font-size: 2.5rem;
+    }
+    /* background-color: red; */
+  `}
+`;
+
+export const RowTwoItens = styled.div`
+  ${({ theme }) => css`
+    /* min-width: 100vh; */
+    /* min-height: 100vh; */
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     @media ${theme.media.lteMedium} {
       flex-direction: column;
     }
+    > ${Text} {
+      color: black;
+    }
     /* background-color: red; */
   `}
 `;
-
 export const Card = styled.div`
   ${({ theme }) => css`
     /* position: relative; */
@@ -345,4 +379,140 @@ export const CardName = styled.div`
     margin: 1rem;
     text-align: center;
   }
+`;
+
+export const Clients = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    > ${Text} {
+      color: black;
+      align-self: center;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+      font-size: 2.5rem;
+    }
+    @media ${theme.media.lteMedium} {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  `}
+`;
+
+export const RowThreeItens = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    > ${Text} {
+      color: black;
+    }
+    > ${Logo} {
+      width: 9rem;
+      margin: 4rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      align-self: center;
+    }
+    @media ${theme.media.lteMedium} {
+      > ${Logo} {
+        /* width: 5rem; */
+        /* height: 5rem; */
+        margin: 2.5rem;
+        /* width: 90%; */
+      }
+    }
+  `}
+`;
+
+export const ContactDiv = styled.div`
+  ${({ theme }) => css`
+  display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    min-height: 80vh;
+    background-color: ${theme.colors.secondaryColor};
+  > ${Text} {
+      color: black;
+      align-self: center;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+      font-size: 2.5rem;
+      color: white;
+    }
+    @media ${theme.media.lteMedium} {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    }
+  `}
+`;
+
+export const ContactItens = styled.div`
+  ${({ theme }) => css`
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    > ${ImageCar}{
+      margin: 4rem;
+      /* background-color: red; */
+    }
+    @media ${theme.media.lteMedium} {
+      flex-direction: column;
+      /* justify-content: space-between; */
+    }
+    }
+  `}
+`;
+
+export const Form = styled.div`
+  ${({ theme }) => css`
+    flex-direction: column;
+    display: flex;
+    >${Button}{
+      background-color: white;
+      color: black;
+      margin-top:1rem;
+      border-radius: 0;
+      margin: 0.5rem;
+    }
+    }
+  `}
+`;
+
+export const Input = styled.input`
+  ${({ theme }) => css`
+    /* flex-direction: row; */
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 20px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #ff6600;
+    color: #FFFFFF;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 1px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    }
+    :focus {
+     outline:none;
+  `}
+`;
+
+export const WhatsAppContact = styled.div`
+  ${({ theme }) => css`
+    /* flex-direction: row; */
+    }
+  `}
+`;
+
+export const YoutubeVideo = styled.div`
+  ${({ theme }) => css`
+    /* flex-direction: row; */
+    }
+  `}
 `;
