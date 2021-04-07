@@ -6,6 +6,7 @@ export const Base1 = ({ srcImage, srcLogo, children }) => {
   return (
     <>
       <Styled.Container>
+        {/* <Styled.Div> */}
         <Styled.CarDiv>
           <Styled.ImageCar src={srcImage} alt="title"></Styled.ImageCar>
         </Styled.CarDiv>
@@ -16,9 +17,11 @@ export const Base1 = ({ srcImage, srcLogo, children }) => {
           </Styled.Text>
           <Styled.Button>WhatsApp</Styled.Button>
         </Styled.LogoWhatsApp>
+        {/* </Styled.Div> */}
         <Styled.Grid3>
           <Styled.Text>
-            A NET VISTORIA é uma empresa que lhe ajuda a comprar um carro
+            A NET VISTORIA é uma empresa que lhe ajuda a comprar um carro.
+            Interessou Tem Dúvidas?
           </Styled.Text>
           <Styled.Button>Vamos Conversar</Styled.Button>
           <Styled.ImageCar
@@ -42,12 +45,12 @@ export const Base1 = ({ srcImage, srcLogo, children }) => {
           <Styled.Span></Styled.Span>
           <Styled.Span></Styled.Span>
         </Styled.Text>
-        <Styled.DivImageLoupe>
-          <Styled.ImageCar
-            src="assets/images/car_loupe.svg"
-            alt="title"
-          ></Styled.ImageCar>
-        </Styled.DivImageLoupe>
+        {/* <Styled.DivImageLoupe> */}
+        <Styled.ImageCar
+          src="assets/images/car_loupe.svg"
+          alt="title"
+        ></Styled.ImageCar>
+        {/* </Styled.DivImageLoupe> */}
       </Styled.Grid5>
       <Styled.Grid6>
         <Styled.Visao>

@@ -4,18 +4,18 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: none;
+      /* height: 40vh; */
+    }
   `}
 `;
 
 export const ImageCar = styled.img`
   ${({ theme }) => css`
     max-width: 100%;
-
-    @media ${theme.media.lteMedium} {
-      display: none;
-      text-align: center;
-      justify-content: center;
-    }
+    /* display: none; */
+    /* order: 2; */
   `}
 `;
 
@@ -23,6 +23,11 @@ export const Logo = styled.img`
   ${({ theme }) => css`
     width: 40%;
     height: 40%;
+
+    @media ${theme.media.lteMedium} {
+      width: 60%;
+      height: 60%;
+    }
   `}
 `;
 
@@ -31,6 +36,14 @@ export const CarDiv = styled.div`
     vertical-align: bottom;
     justify-content: center;
     display: flex;
+
+    @media ${theme.media.lteMedium} {
+      display: none;
+      text-align: center;
+      justify-content: center;
+      /* order: 0; */
+      /* flex-flow: column-reverse; */
+    }
   `}
 `;
 
@@ -42,7 +55,17 @@ export const LogoWhatsApp = styled.div`
     justify-content: center;
     align-items: center;
     @media ${theme.media.lteMedium} {
-      display: none;
+      flex-flow: row wrap;
+      background-color: ${theme.colors.white};
+      min-height: 40vh;
+      /* color: black; */
+      > ${Text} {
+        color: black;
+        text-align: center;
+      }
+      > ${Button} {
+        display: none;
+      }
     }
   `}
 `;
@@ -80,17 +103,42 @@ export const Button = styled.button`
 export const Grid3 = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.colors.primaryColor};
-    /* padding: 0; */
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: top;
     align-items: center;
     height: 90vh;
 
     > ${Text} {
-      margin-top: 6rem;
+      margin-top: 3rem;
       max-width: 30rem;
       text-align: center;
+    }
+    > ${ImageCar} {
+      width: 70%;
+      height: 70%;
+      /* background-color: red;/ */
+      /* order: 0; */
+    }
+    @media ${theme.media.lteMedium} {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      height: 70vh;
+      align-items: center;
+      > ${Text} {
+        color: black;
+        margin-top: 0;
+      }
+      > ${Button} {
+        order: 0;
+      }
+      > ${ImageCar} {
+        width: 100%;
+        height: 100%;
+        /* background-color: red;/ */
+        /* order: 2; */
+      }
     }
   `}
 `;
@@ -112,14 +160,13 @@ export const Grid4 = styled.div`
       background-color: ${theme.colors.primaryColor};
       outline: none;
     }
+    @media ${theme.media.lteMedium} {
+      justify-content: end;
+      height: 40vh;
+    }
   `}
 `;
 
-export const DivImageLoupe = styled.div`
-  ${({ theme }) => css`
-    flex-basis: 100%;
-  `}
-`;
 export const Grid5 = styled.div`
   ${({ theme }) => css`
     min-height: 80vh;
@@ -133,11 +180,40 @@ export const Grid5 = styled.div`
       flex-basis: 100%;
       display: flex;
       min-width: 90vh;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+      margin-top: 6rem;
     }
+    > ${ImageCar} {
+      /* color: black; */
+      width: 50%;
+      height: 50%;
+      /* order: 2; */
+    }
+    @media ${theme.media.lteMedium} {
+      justify-content: end;
+      min-height: 50vh;
+      > ${Text} {
+        min-width: 40vh;
+        font-size: 1rem;
+      }
+      > ${ImageCar} {
+        /* color: black; */
+        width: 80%;
+        height: 80%;
+        /* order: 2; */
+      }
+    }
+  `}
+`;
+
+export const DivImageLoupe = styled.div`
+  ${({ theme }) => css`
+    /* flex-basis: 100%; */
 
     > ${ImageCar} {
-      color: black;
+      /* color: black; */
+      width: 60%;
+      height: 60%;
     }
   `}
 `;
@@ -145,6 +221,22 @@ export const Grid5 = styled.div`
 export const Span = styled.div`
   ${({ theme }) => css`
     max-width: 22rem;
+    @media ${theme.media.lteMedium} {
+      min-width: 40vh;
+    }
+  `}
+`;
+
+export const Div = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+    display: flex;
+    /* max-width: 22rem; */
+    align-items: center;
+    flex-direction: row;
+    min-width: 100vh;
+    background-color: red;
+    /* flex-flow: row wrap; */
   `}
 `;
 
@@ -153,11 +245,14 @@ export const Visao = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
+
     justify-content: center;
     /* background-color: red; */
     width: 100%;
     > ${Text} {
       width: 100%;
+      height: 100%;
+      text-align: center;
       /* margin: 2rem; */
     }
   `}
@@ -170,14 +265,15 @@ export const LongText = styled.div`
     margin: 3.5rem;
     max-width: 70rem;
     li {
-      margin: 2rem;
+      margin: 1rem;
     }
   `}
 `;
 
 export const Grid6 = styled.div`
   ${({ theme }) => css`
-    min-width: 100vh;
+    /* min-width: 100vh; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,13 +284,15 @@ export const Grid6 = styled.div`
 
 export const Grid7 = styled.div`
   ${({ theme }) => css`
-    min-width: 100vh;
-    min-height: 100vh;
+    /* min-width: 100vh; */
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    @media ${theme.media.lteMedium} {
+      flex-direction: column;
+    }
     /* background-color: red; */
   `}
 `;
@@ -222,6 +320,10 @@ export const Card = styled.div`
       font-size: 1rem;
       /* margin-bottom: 1rem; */
       color: black;
+    }
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+      margin: 2rem;
     }
   `}
 `;
