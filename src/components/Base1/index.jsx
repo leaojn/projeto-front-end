@@ -91,7 +91,6 @@ export const Base1 = ({ srcImage, srcLogo, children, name }) => {
           <Styled.Logo src="assets/images/Mitsubishi.svg"></Styled.Logo>
         </Styled.RowThreeItens>
         <Styled.RowThreeItens>
-          {' '}
           <Styled.Logo src="assets/images/Cherry.svg"></Styled.Logo>
           <Styled.Logo src="assets/images/Citroen.svg"></Styled.Logo>
           <Styled.Logo src="assets/images/Volvo.svg"></Styled.Logo>

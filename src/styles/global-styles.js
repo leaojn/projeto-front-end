@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 1.6rem;
+    padding: 0rem;
     font-family: 'Open Sans', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {

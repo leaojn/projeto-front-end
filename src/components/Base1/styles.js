@@ -421,10 +421,6 @@ export const RowThreeItens = styled.div`
         margin-top: 0;
         margin: 3rem;
         margin-bottom: 0;
-        /* width: 5rem; */
-        /* height: 5rem; */
-        /* margin: 2.5rem; */
-        /* width: 90%; */
       }
     }
   `}
@@ -434,8 +430,6 @@ export const ContactDiv = styled.div`
   ${({ theme }) => css`
   display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     min-height: 80vh;
     background-color: ${theme.colors.secondaryColor};
   > ${Text} {
