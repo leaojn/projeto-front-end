@@ -37,5 +37,5 @@ export const Cards = ({ children }) => {
 };
 
 Cards.propTypes = {
-  children: P.node.isRequired,
+  children: P.node,
 };

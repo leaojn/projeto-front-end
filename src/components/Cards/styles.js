@@ -7,8 +7,8 @@ export const Container = styled.div`
     background-color: #dfe6e9;
     -webkit-transform: perspective(900px);
     -webkit-transform-style: preserve-3d;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
   `}
 `;
 
