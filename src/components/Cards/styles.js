@@ -21,7 +21,7 @@ export const Div = styled.div`
     }
     @media ${theme.media.lteMedium} {
       > ${Card} {
-        left: 4rem;
+        left: 3rem;
         margin-top: 10rem;
         /* transform: translatey(0); */
       }
@@ -36,7 +36,7 @@ export const Card = styled.div`
     left: 55rem;
     width: 250px;
     height: 550px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     background-image: linear-gradient(
       to bottom,
@@ -49,7 +49,7 @@ export const Card = styled.div`
     animation: animate 1s linear infinite;
     transition: 0.6s;
 
-    transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+    /* transform: rotatex(75deg) translatey(-200px) translatez(-100px); */
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
     &:hover {
       transform: rotatex(0deg);
@@ -79,9 +79,9 @@ export const Card = styled.div`
       transform: translatex(12px);
     }
     @media ${theme.media.lteMedium} {
-      left: 4rem;
+      left: 3rem;
       /* transform: translatex(700px); */
-      margin-top: 40rem;
+      margin-top: 50rem;
       /* top: 32rem; */
     }
   `}

@@ -8,6 +8,7 @@ import { OneColumn03 } from '../OneColumn03';
 import { Missao } from '../Missao';
 import { Client } from '../Client';
 import { Cards } from '../Cards';
+import { Contact } from '../Contact';
 
 export const HomePage = ({ children }) => {
   return (
@@ -19,6 +20,7 @@ export const HomePage = ({ children }) => {
       <Missao></Missao>
       <Client></Client>
       <Cards></Cards>
+      <Contact></Contact>
     </Styled.Container>
   );
 };
