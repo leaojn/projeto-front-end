@@ -8,15 +8,16 @@ export const Contact = ({ children }) => {
 
       <Styled.ContactItens>
         <Styled.Form>
-          <Styled.Input type="text" value={name}></Styled.Input>
-          <Styled.Input type="text" value={name}></Styled.Input>
-          <Styled.Input type="text" value={name}></Styled.Input>
-          <Styled.Input type="text" value={name}></Styled.Input>
+          <Styled.Input type="text" value="name"></Styled.Input>
+          <Styled.Input type="text" value="telefone"></Styled.Input>
+          <Styled.Input type="text" value="email"></Styled.Input>
+          <Styled.Input type="text" value="servico"></Styled.Input>
           <Styled.Button>Enviar</Styled.Button>
         </Styled.Form>
         <Styled.ImageCar src="assets/images/Argo.svg"></Styled.ImageCar>
         <Styled.WhatsAppContact>
           <Styled.ImageCar src="assets/images/WhatsApp.svg"></Styled.ImageCar>
+          <Styled.ButtonWhatsApp>WhatsApp</Styled.ButtonWhatsApp>
         </Styled.WhatsAppContact>
       </Styled.ContactItens>
     </Styled.ContactDiv>

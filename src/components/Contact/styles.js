@@ -37,6 +37,20 @@ export const Text = styled.div`
     font-size: 1.4rem;
   `}
 `;
+export const WhatsAppContact = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media ${theme.media.lteMedium} {
+      /* flex-direction: column; */
+
+      /* justify-content: space-between; */
+    }
+  `}
+`;
+
 export const Input = styled.input`
   ${({ theme }) => css`
     /* flex-direction: row; */
@@ -52,8 +66,9 @@ export const Input = styled.input`
     box-shadow: 0px 0px 1px rgba(66,66,66,.75);
     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
     }
-    :focus {
+    /* :focus {
      outline:none;
+    } */
   `}
 `;
 
@@ -75,6 +90,7 @@ export const ContactItens = styled.div`
     }
   `}
 `;
+
 export const Button = styled.button`
   ${({ theme }) => css`
     /* padding: 12px 28px; */
@@ -112,12 +128,27 @@ export const Form = styled.div`
 
 export const ImageCar = styled.img`
   ${({ theme }) => css`
-    max-width: 100%;
+    max-width: 35%;
     /* display: none; */
     /* order: 2; */
   `}
 `;
 
-export const WhatsAppContact = styled.div`
-  ${({ theme }) => css``}
+export const ButtonWhatsApp = styled.button`
+  ${({ theme }) => css`
+    margin-top: 4rem;
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background-color: ${theme.colors.primaryColor};
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: ${theme.colors.white};
+    font-family: Arial;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.2rem 4.2rem;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #2b665e;
+  `}
 `;
