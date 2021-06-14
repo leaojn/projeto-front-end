@@ -1,9 +1,6 @@
 import * as Styled from './styles';
 import P from 'prop-types';
-import emailjs from 'emailjs-com';
 
-// f2wuRnih3C!f
-//falecomnetvistorias@gmail.com
 export const Contact = ({ id }) => {
   let onSubmit = (e) => {
     let message =
@@ -19,29 +16,16 @@ export const Contact = ({ id }) => {
       'Serviço: ' +
       e.target['3'].value +
       '\n';
-    emailjs
-      .send(
-        'service_esw1tws',
-        'template_yw9kxxi',
-        {
-          from_name: e.target['0'].value,
-          message: message,
-          reply_to: e.target['2'].value,
-        },
-        'user_YfZ0q40MBSxHtR6XdntLU',
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        },
-      );
-    console.log();
-    console.log(e.target['1'].value);
-    console.log();
-    console.log(e.target['3'].value);
+
+    window.Email.send({
+      Host: 'smtp.gmail.com',
+      Username: 'falecomnetvistorias@gmail.com',
+      Password: 'f2wuRnih3C!f',
+      To: 'falecomnetvistorias@gmail.com',
+      From: 'falecomnetvistorias@gmail.com',
+      Subject: 'Contato pelo site',
+      Body: message,
+    }).then((message) => alert(message));
     e.preventDefault();
   };
   return (
