@@ -36,7 +36,7 @@ export const Base1 = ({ srcImage, srcLogo, name }) => {
           </Styled.Text>
           <a
             rel="noreferrer"
-            href="https://api.whatsapp.com/send?phone=5586999294818&text=Gostaria%20de%20saber%20mais"
+            href="https://api.whatsapp.com/send?phone=5586995037994&text=Gostaria%20de%20saber%20mais"
             target="_blank"
           >
             <Styled.Button>Você Sabia?</Styled.Button>

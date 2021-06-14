@@ -44,7 +44,7 @@ export const Contact = ({ id }) => {
           <Styled.ImageCar src="assets/images/WhatsApp.svg"></Styled.ImageCar>
           <a
             rel="noreferrer"
-            href="https://api.whatsapp.com/send?phone=5586999294818&text=Gostaria%20de%20saber%20mais"
+            href="https://api.whatsapp.com/send?phone=5586995037994&text=Gostaria%20de%20saber%20mais"
             target="_blank"
           >
             <Styled.ButtonWhatsApp>WhatsApp</Styled.ButtonWhatsApp>

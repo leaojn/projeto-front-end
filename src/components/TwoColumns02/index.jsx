@@ -11,7 +11,7 @@ export const TwoColumns02 = ({ id }) => {
         </Styled.Span>
         <a
           rel="noreferrer"
-          href="https://api.whatsapp.com/send?phone=5586999294818&text=Gostaria%20de%20saber%20mais"
+          href="https://api.whatsapp.com/send?phone=5586995037994&text=Gostaria%20de%20saber%20mais"
           target="_blank"
         >
           <Styled.Button>Vamos Conversar</Styled.Button>
@@ -25,7 +25,7 @@ export const TwoColumns02 = ({ id }) => {
         </Styled.Span>
         <a
           rel="noreferrer"
-          href="https://api.whatsapp.com/send?phone=5586999294818&text=Gostaria%20de%20saber%20mais"
+          href="https://api.whatsapp.com/send?phone=5586995037994&text=Gostaria%20de%20saber%20mais"
           target="_blank"
         >
           <Styled.Button>Você Sabia?</Styled.Button>
