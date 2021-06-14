@@ -1,8 +1,6 @@
 import * as Styled from './styles';
-import P from 'prop-types';
-import { Style } from '@styled-icons/material-outlined';
 
-export const Cards = ({ children }) => {
+export const Cards = () => {
   return (
     <Styled.Container>
       <Styled.Div>
@@ -34,8 +32,4 @@ export const Cards = ({ children }) => {
       </Styled.Card>
     </Styled.Container>
   );
-};
-
-Cards.propTypes = {
-  children: P.node,
 };

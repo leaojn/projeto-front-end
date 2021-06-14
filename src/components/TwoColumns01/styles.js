@@ -80,7 +80,7 @@ export const Button = styled.button`
     display: inline-block;
     cursor: pointer;
     color: ${theme.colors.white};
-    font-family: Arial;
+    font-family: Arial, serif;
     font-size: 1.3rem;
     font-weight: bold;
     padding: 1.2rem 4.2rem;

@@ -58,13 +58,25 @@ export const Input = styled.input`
     margin: 0.5rem;
     font-size: 20px;
     border-width: 1px;
-    border-color: #CCCCCC;
+    border-color: #cccccc;
     background-color: #ff6600;
-    color: #FFFFFF;
+    color: #ffffff;
     border-style: solid;
     border-radius: 0px;
-    box-shadow: 0px 0px 1px rgba(66,66,66,.75);
-    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    box-shadow: 0px 0px 1px rgba(66, 66, 66, 0.75);
+    text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: white;
+    }
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: white;
     }
     /* :focus {
      outline:none;
@@ -111,17 +123,14 @@ export const Button = styled.button`
   `}
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   ${({ theme }) => css`
     flex-direction: column;
     display: flex;
-    >${Button}{
+    > ${Button} {
       background-color: white;
       color: black;
-      margin-top:1rem;
       border-radius: 0;
-      margin: 0.5rem;
-    }
     }
   `}
 `;

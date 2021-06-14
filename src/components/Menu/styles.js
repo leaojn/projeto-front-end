@@ -15,14 +15,12 @@ export const Container = styled.div`
     left: 0;
     right: 0;
     width: 100%;
-    bottom: 0;
     transition: all 300ms ease-in-ease-out;
 
     /* background-color: gray; */
     border-bottom: ${theme.colors.white};
 
     @media ${theme.media.lteMedium} {
-      height: 100vh;
       /* left: 0; */
       /* padding: 0; */
       visibility: hidden;

@@ -1,10 +1,9 @@
 import * as Styled from './styles';
 import P from 'prop-types';
-import { Style } from '@styled-icons/material-outlined';
 
-export const TwoColumns01 = ({ children }) => {
+export const TwoColumns01 = ({ id }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id={id}>
       <Styled.ImageCarDiv>
         <Styled.ImageCar src="assets/images/hb20.png"></Styled.ImageCar>
       </Styled.ImageCarDiv>
@@ -13,12 +12,18 @@ export const TwoColumns01 = ({ children }) => {
         <Styled.Span>
           Conheça a melhor forma de comprar seu carro novo
         </Styled.Span>
-        <Styled.Button>WhatsApp</Styled.Button>
+        <a
+          rel="noreferrer"
+          href="https://api.whatsapp.com/send?phone=5586999294818&text=Gostaria%20de%20saber%20mais"
+          target="_blank"
+        >
+          <Styled.Button>WhatsApp</Styled.Button>
+        </a>
       </Styled.LogoAndWhatsAppDiv>
     </Styled.Container>
   );
 };
 
 TwoColumns01.propTypes = {
-  children: P.node.isRequired,
+  id: P.string.isRequired,
 };

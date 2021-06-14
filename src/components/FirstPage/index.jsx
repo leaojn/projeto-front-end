@@ -1,10 +1,9 @@
 import * as Styled from './styles';
-import P from 'prop-types';
 import { Menu } from '../Menu';
 import { Base1 } from '../Base1';
 import linksMock from '../NavLinks/mock';
 
-export const FirstPage = ({ children }) => {
+export const FirstPage = () => {
   return (
     <Styled.Container>
       <Menu links={linksMock}></Menu>
@@ -14,8 +13,4 @@ export const FirstPage = ({ children }) => {
       ></Base1>
     </Styled.Container>
   );
-};
-
-FirstPage.propTypes = {
-  children: P.node.isRequired,
 };

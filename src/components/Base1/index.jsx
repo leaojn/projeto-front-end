@@ -1,9 +1,7 @@
 import * as Styled from './styles';
 import P from 'prop-types';
-import { Style } from '@styled-icons/material-outlined';
-import { useState } from 'react';
 
-export const Base1 = ({ srcImage, srcLogo, children, name }) => {
+export const Base1 = ({ srcImage, srcLogo, name }) => {
   // const [name, setName] = useState();
   return (
     <Styled.Body>
@@ -36,7 +34,13 @@ export const Base1 = ({ srcImage, srcLogo, children, name }) => {
             A cada 4 veículos 1 apresenta algum tipo de restrição. Fuja do
             risco. Conte com a NET VISTORIAS
           </Styled.Text>
-          <Styled.Button>Você Sabia?</Styled.Button>
+          <a
+            rel="noreferrer"
+            href="https://api.whatsapp.com/send?phone=5586999294818&text=Gostaria%20de%20saber%20mais"
+            target="_blank"
+          >
+            <Styled.Button>Você Sabia?</Styled.Button>
+          </a>
         </Styled.Grid4>
       </Styled.Container>
       <Styled.Grid5>
@@ -160,7 +164,6 @@ export const Base1 = ({ srcImage, srcLogo, children, name }) => {
 };
 
 Base1.propTypes = {
-  children: P.node.isRequired,
   srcImage: P.string.isRequired,
   srcLogo: P.string.isRequired,
   name: P.string.isRequired,

@@ -1,22 +1,27 @@
 export default [
   {
     children: 'HOME',
-    link: 'target1',
+    link: 'home',
     newTab: false,
   },
   {
     children: 'NET VISTORIA',
-    link: 'target2',
+    link: 'net_vistoria',
     newTab: false,
   },
   {
     children: 'EMPRESA',
-    link: 'target3',
+    link: 'empresa',
     newTab: false,
   },
   {
     children: 'CONTATO',
-    link: 'target4',
+    link: 'contato',
     newTab: false,
+  },
+  {
+    children: 'AGENDAMENTO',
+    link: 'http://dekra.com.br/piaui/',
+    newTab: true,
   },
 ];

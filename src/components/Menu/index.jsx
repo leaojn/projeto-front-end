@@ -5,10 +5,9 @@ import { LogoLink } from '../LogoLink';
 import { NavLinks } from '../NavLinks';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
-import { Style } from '@styled-icons/material-outlined';
 import { useState } from 'react';
 
-export const Menu = ({ links = [], children }) => {
+export const Menu = ({ links = [] }) => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -29,7 +28,5 @@ export const Menu = ({ links = [], children }) => {
 };
 
 Menu.propTypes = {
-  children: P.node.isRequired,
   ...NavLinks.propTypes,
-  logoData: P.shape(LogoLink.propTypes).isRequired,
 };

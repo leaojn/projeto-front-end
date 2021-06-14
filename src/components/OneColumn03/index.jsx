@@ -1,9 +1,9 @@
 import * as Styled from './styles';
 import P from 'prop-types';
 
-export const OneColumn03 = ({ children }) => {
+export const OneColumn03 = ({ id }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id={id}>
       <Styled.Span>
         A NET Vistorias já tem mais de X anos no mercado
       </Styled.Span>
@@ -13,5 +13,5 @@ export const OneColumn03 = ({ children }) => {
 };
 
 OneColumn03.propTypes = {
-  children: P.node.isRequired,
+  id: P.string.isRequired,
 };

@@ -1,7 +1,6 @@
 import * as Styled from './styles';
-import P from 'prop-types';
 
-export const Client = ({ children }) => {
+export const Client = () => {
   return (
     <Styled.Container>
       <Styled.Text>CLIENTES</Styled.Text>
@@ -25,8 +24,4 @@ export const Client = ({ children }) => {
       </Styled.RowThreeItens>
     </Styled.Container>
   );
-};
-
-Client.propTypes = {
-  children: P.node.isRequired,
 };

@@ -1,7 +1,7 @@
 import * as Styled from './styles';
 import P from 'prop-types';
 
-export const Missao = ({ children }) => {
+export const Missao = () => {
   return (
     <Styled.Container>
       <Styled.Row>
@@ -27,8 +27,4 @@ export const Missao = ({ children }) => {
       </Styled.Row>
     </Styled.Container>
   );
-};
-
-Missao.propTypes = {
-  children: P.node.isRequired,
 };

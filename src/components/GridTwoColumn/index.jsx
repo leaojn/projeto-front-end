@@ -3,11 +3,8 @@ import P from 'prop-types';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
-import { NavLinks } from '../NavLinks';
-import { links } from '../NavLinks/mock';
 
 export const GridTwoColumn = ({
-  children,
   title,
   text,
   srcImg,
@@ -32,7 +29,6 @@ export const GridTwoColumn = ({
 };
 
 GridTwoColumn.propTypes = {
-  children: P.node.isRequired,
   title: P.string.isRequired,
   text: P.string.isRequired,
   srcImg: P.string.isRequired,
