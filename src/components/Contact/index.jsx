@@ -21,7 +21,7 @@ export const Contact = ({ id }) => {
       Host: 'smtp.gmail.com',
       Username: 'falecomnetvistorias@gmail.com',
       Password: 'f2wuRnih3C!f',
-      To: 'falecomnetvistorias@gmail.com',
+      To: 'agendamento@netvistoria.com',
       From: 'falecomnetvistorias@gmail.com',
       Subject: 'Contato pelo site',
       Body: message,

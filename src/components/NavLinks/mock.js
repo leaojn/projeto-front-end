@@ -21,7 +21,7 @@ export default [
   },
   {
     children: 'AGENDAMENTO',
-    link: 'http://dekra.com.br/piaui/',
+    link: 'https://bit.ly/agendamentonetvistorias',
     newTab: true,
   },
 ];
