@@ -50,6 +50,7 @@ export const Span = styled.div`
 export const Button = styled.button`
   ${({ theme }) => css`
     margin-top: 1rem;
+    margin-bottom: 2rem;
     box-shadow: inset 0px 1px 3px 0px #91b8b3;
     background-color: ${theme.colors.secondaryColor};
     border-radius: 5px;

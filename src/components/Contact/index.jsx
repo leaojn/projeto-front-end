@@ -25,7 +25,7 @@ export const Contact = ({ id }) => {
       From: 'falecomnetvistorias@gmail.com',
       Subject: 'Contato pelo site',
       Body: message,
-    }).then((message) => alert(message));
+    }).then((message) => alert('Mensagem de contato Enviada!'));
     e.preventDefault();
   };
   return (

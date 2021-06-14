@@ -8,14 +8,19 @@ import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { useState } from 'react';
 
 export const Menu = ({ links = [] }) => {
-  const [visible, setVisible] = useState(false);
+  let [visible, setVisible] = useState(false);
 
   return (
     <>
       <Styled.Button visible={visible} onClick={() => setVisible(true)}>
         {visible ? <CloseIcon /> : <MenuIcon />}
       </Styled.Button>
-      <Styled.Container visible={visible} onClick={() => setVisible(false)}>
+      <Styled.Container
+        visible={visible}
+        onClick={() => {
+          setVisible(false);
+        }}
+      >
         <SectionContainer>
           <Styled.MenuContainer>
             <NavLinks links={links}></NavLinks>
