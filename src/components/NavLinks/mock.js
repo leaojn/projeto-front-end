@@ -10,18 +10,13 @@ export default [
     newTab: false,
   },
   {
-    children: 'EMPRESA',
-    link: 'empresa',
+    children: 'AGENDAR',
+    link: 'agendar',
     newTab: false,
   },
   {
     children: 'CONTATO',
     link: 'contato',
     newTab: false,
-  },
-  {
-    children: 'AGENDAMENTO',
-    link: 'https://bit.ly/agendamentonetvistorias',
-    newTab: true,
   },
 ];
