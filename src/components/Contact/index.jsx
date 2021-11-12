@@ -47,7 +47,7 @@ export const Contact = ({ id }) => {
             href="https://api.whatsapp.com/send?phone=5586995037994&text=Gostaria%20de%20saber%20mais"
             target="_blank"
           >
-            <Styled.ButtonWhatsApp>WhatsApp</Styled.ButtonWhatsApp>
+            <Styled.ButtonWhatsApp>+5586995037994</Styled.ButtonWhatsApp>
           </a>
         </Styled.WhatsAppContact>
       </Styled.ContactItens>
